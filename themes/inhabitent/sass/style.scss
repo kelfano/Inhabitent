@@ -69,9 +69,10 @@ header{
 	display:flex;
 	position: fixed;
 	justify-content:space-around;
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	align-items: center;
+	border-bottom:1px solid black;
 	a{
 			text-decoration:none;
 			color:white;

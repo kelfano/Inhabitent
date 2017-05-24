@@ -36,8 +36,9 @@ get_header();
     while ( $the_query->have_posts() ) : $the_query->the_post();
      echo get_the_title();
      ?>
-     <div class="img" style="background-image:linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,.5)),url(<?php echo get_the_post_thumbnail_url();?>);">
-    </div>
+     <!--<div class="img" style="background-image:linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,.5)),url(<?php echo get_the_post_thumbnail_url();?>);">
+    </div>-->
+    <img src="<?php echo get_the_post_thumbnail_url(); ?>">
     <h2><?php echo get_the_date() . ' / ' . strval(wp_count_comments(get_the_ID())->total_comments) . ' comments' ;?></h2>
     <a href="<?php echo get_permalink();?>">read entry</a>
     <?php

@@ -8,10 +8,10 @@ get_header();
 </div>
 
 
+
 <div class ="post">
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <?php the_content(); ?>
-  <!--<?php echo CFS()->get( 'Featured Image' ); ?>-->
   <?php endwhile; endif; ?>
 </div>
 
