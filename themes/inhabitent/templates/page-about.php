@@ -3,10 +3,15 @@ get_header();
 ?>
 
 
-<div class="img" style="background-image:linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,.5)),url(<?php echo get_the_post_thumbnail_url();?>);">
+<div class="img custom-hero">
   <h1><?php echo get_the_title();?></h1>
 </div>
 
+  <h2> Our story </h2>
+  <p><?php echo CFS()->get( 'our_story' ); ?></p>
+
+  <h2> Our team </h2>
+  <p><?php echo CFS()->get( 'our_team' ); ?></p>
 
 
 <div class ="post">

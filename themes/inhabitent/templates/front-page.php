@@ -17,7 +17,22 @@ get_header();
     <div>
     <img src="http://tent.academy.red/wp-content/themes/inhabitent/images/do.svg" alt="Do">
     <p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
-    <a href="<?php echo site_url('');?>">do stuff</a>
+    <a href="<?php echo site_url('');?>">Do stuff</a>
+    </div>
+    <div>
+    <img src="http://tent.academy.red/wp-content/themes/inhabitent/images/eat.svg" alt="Eat">
+    <p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
+    <a href="<?php echo site_url('');?>">Eat stuff</a>
+    </div>
+    <div>
+    <img src="http://tent.academy.red/wp-content/themes/inhabitent/images/sleep.svg" alt="Sleep">
+    <p>Get a good night's rest in the wild in a home away from home that travels well.</p>
+    <a href="<?php echo site_url('');?>">Sleep stuff</a>
+    </div>
+    <div>
+    <img src="http://tent.academy.red/wp-content/themes/inhabitent/images/wear.svg" alt="Wear">
+    <p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
+    <a href="<?php echo site_url('');?>">Wear stuff</a>
     </div>
   </div>
 </section>
@@ -29,18 +44,19 @@ get_header();
     $args = array(
       'post_type' => 'post',
       'posts_per_page' => 3
-    );
-    $the_query = new WP_Query( $args );
+    );  ?>
+    <?php $the_query = new WP_Query( $args ); ?>
+
     // The Loop
-    if ( $the_query->have_posts() ) :
-    while ( $the_query->have_posts() ) : $the_query->the_post();
-     echo get_the_title();
-     ?>
-     <!--<div class="img" style="background-image:linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,.5)),url(<?php echo get_the_post_thumbnail_url();?>);">
-    </div>-->
-    <img src="<?php echo get_the_post_thumbnail_url(); ?>">
-    <h2><?php echo get_the_date() . ' / ' . strval(wp_count_comments(get_the_ID())->total_comments) . ' comments' ;?></h2>
-    <a href="<?php echo get_permalink();?>">read entry</a>
+    <?php if ( $the_query->have_posts() ) : ?>
+    <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+    
+      <ul class ="home-post">
+        <li><img src="<?php echo the_post_thumbnail_url('medium'); ?>"></li>
+        <li><h2><?php echo get_the_date() . ' / ' . strval(wp_count_comments(get_the_ID())->total_comments) . ' comments' ;?></h2> </li>
+        <li> <h2> <?php echo get_the_title();?> </h2> </li>
+        <li><a href="<?php echo get_permalink();?>">Read Entry</a></li>
+      </ul>
     <?php
     endwhile;
     endif;

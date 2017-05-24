@@ -656,7 +656,7 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-header {
+.site-header {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
@@ -666,23 +666,23 @@ header {
   margin: 0 auto;
   -ms-flex-align: center;
       align-items: center;
-  border-bottom: 1px solid black; }
-  header a {
+  border-bottom: 1px solid #e1e1e1; }
+  .site-header a {
     text-decoration: none;
     color: white; }
-    header a img {
+    .site-header a img {
       width: 70px;
       height: 33px; }
-  header nav.main-navigation {
+  .site-header nav.main-navigation {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: end;
         justify-content: flex-end; }
-    header nav.main-navigation div ul li {
+    .site-header nav.main-navigation div ul li {
       padding: 0 1em; }
-      header nav.main-navigation div ul li a {
+      .site-header nav.main-navigation div ul li a {
         color: white; }
-  header i {
+  .site-header i {
     color: white; }
 
 div.img {
