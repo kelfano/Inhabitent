@@ -54,3 +54,17 @@ function inhabitent_login_title(){
 	return 'Inhabitent';
 }
 add_filter('login_headertitle','inhabitent_login_title');
+
+
+function inhabitent_modify_archive_queries( $query ) {
+	if(
+		( is_post_type_archive(array('products') ) || $query->is_tax('product-type'))
+	&& !is_admin() 
+	&& $query->is_main_query() 
+	 ) {
+		$query->set( 'posts_per_page', 16);
+		$query->set('orderby','title');
+		$query->set( 'order', ASC);
+	} 
+}
+	add_action( 'pre_get_posts', 'inhabitent_modify_archive_queries' ); 
