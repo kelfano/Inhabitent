@@ -11,14 +11,28 @@ get_header(); ?>
 <!--Rest of page markup and php here-->
 
 <div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main" role="main">.
 
-		<div class ="product-type">
-		 <a href="<?php echo get_permalink();?>">DO</a>
-		 <a href="<?php echo get_permalink();?>">EAT</a>
-		 <a href="<?php echo get_permalink();?>">SLEEP</a> 
-		 <a href="<?php echo get_permalink();?>">WEAR</a> 
-		</div>
+<section class ="product-info container">
+  <h1>shop stuff </h1>
+  <?php $product_types = get_terms(array(
+      'taxonomy' =>'product-type',
+      'hide_empty' =>0
+  ));
+      if(!empty($product_types) && !is_wp_error($product_types)) : ?>
+      <!-- Put your markup here -->
+
+  <?php foreach($product_types as $product_type):?>
+      <!-- Put more markup here -->
+
+      <a href="<?php echo get_term_link($product_type);?>"
+      <h3><?php echo $product_type ->name;?></h3>
+      </a>
+
+  <?php endforeach; ?>
+
+  <?php endif; ?>
+
   
 				 
 		<?php if ( have_posts() ) : ?>
