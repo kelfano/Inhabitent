@@ -12,11 +12,8 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
-
-			<h1>$<?php echo CFS()->get( 'price' ); ?></h1>
-
-			<?php the_post_navigation(); ?>
+				<?php get_template_part( 'template-parts/content', 'single' ); ?>
+				<h1>$<?php echo CFS()->get( 'price' ); ?></h1>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
@@ -30,5 +27,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

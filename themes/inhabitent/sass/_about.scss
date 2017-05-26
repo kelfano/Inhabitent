@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+# About Page
+--------------------------------------------------------------*/
+
+//About
+div.img{
+	width: 100%;
+	height: 100vh;
+	background-size:cover;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+	h1{
+		color:white;
+		text-transform: uppercase;
+	}
+}
+
+div.post{
+	width: 60%;
+	margin: 0 auto;
+	h2{
+		text-align: center;
+    color:#2f1339;
+    font-size:2.1rem;
+    text-transform: uppercase;
+	}
+}

@@ -19,9 +19,11 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
+		<section class ="product-grid">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
+			<section class ="product-grid-items">
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <header class="entry-header">
             <?php if ( has_post_thumbnail() ) : ?>
@@ -41,10 +43,13 @@ get_header(); ?>
             <?php echo CFS()->get( 'price' ); ?>
           </div><!-- .entry-content -->
         </article><!-- #post-## -->
+			</section>
 
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
+
+		</section>
 
 		<?php else : ?>
 

@@ -3,7 +3,7 @@ get_header();
 ?>
 
 <div class="img" style="background-image:linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,.5)),url(<?php echo get_the_post_thumbnail_url();?>);">
-  <img src="http://tent.academy.red/wp-content/themes/inhabitent/images/inhabitent-logo-full.svg" class="logo" alt="Inhabitent full logo">
+  <img src="<?php echo get_template_directory_uri()?>/project-04/images/logos/inhabitent-logo-full.svg" class="logo" alt="Inhabitent full logo">
 </div>
 <div class ="post">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

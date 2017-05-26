@@ -7,15 +7,15 @@ get_header();
   <h1><?php echo get_the_title();?></h1>
 </div>
 
-  <h2> Our story </h2>
+<div class ="post">
+  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+   <h2> Our story </h2>
   <p><?php echo CFS()->get( 'our_story' ); ?></p>
 
   <h2> Our team </h2>
   <p><?php echo CFS()->get( 'our_team' ); ?></p>
-
-
-<div class ="post">
-  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+  
   <?php the_content(); ?>
   <?php endwhile; endif; ?>
 </div>

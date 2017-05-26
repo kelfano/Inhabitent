@@ -37,6 +37,7 @@
 					</div>
 					<div class ="footer-blocks-item">
 						<div class= "business-hours">
+							<h3>Business Hours</h3>
 							<p>
 								<span class="day-of-week">
 									Monday-Friday:
@@ -59,7 +60,7 @@
 					</div>
 					<div class ="footer-blocks-item">
 						<div class= "text-logo">
-							<a href="project-04/images/logos/inhabitent-logo-text-dark.svg" alt="Inhabitent logo"></a>
+							<a href="<?php echo site_url();?>"><img src="<?php echo get_template_directory_uri()?>/project-04/images/logos/inhabitent-logo-text.svg" alt ="Inhabitent-logo-text"></a>
 						</div>
 					</div>
 				</div>

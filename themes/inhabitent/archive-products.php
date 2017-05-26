@@ -14,7 +14,6 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">.
 
 <section class ="product-info container">
-  <h1>shop stuff </h1>
   <?php $product_types = get_terms(array(
       'taxonomy' =>'product-type',
       'hide_empty' =>0
@@ -54,16 +53,15 @@ get_header(); ?>
 							<?php the_post_thumbnail( 'medium' ); ?>
 						<?php endif; ?>
 
-						<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-						<?php if ( 'post' === get_post_type() ) : ?>
+						<!--<?php if ( 'post' === get_post_type() ) : ?>
 						<div class="entry-meta">
 							<?php red_starter_posted_on(); ?> / <?php red_starter_posted_by(); ?>
 						</div><!-- .entry-meta -->
-						<?php endif; ?>
+						<?php endif; ?>-->
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
+						<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 						<?php echo CFS()->get( 'price' ); ?>
 					</div> 
 				</article><!-- #post-## -->
