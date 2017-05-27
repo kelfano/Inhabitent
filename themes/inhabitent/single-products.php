@@ -12,15 +12,16 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'single' ); ?>
-				<h1>$<?php echo CFS()->get( 'price' ); ?></h1>
+			<div class="product-image-wrapper">
+        <div class="product-image"><?php the_post_thumbnail( 'large' ); ?>
+				</div>
+			</div>
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+        <div class="product-content-wrapper">
+          <h2 class="product-title"><?php the_title(); ?></h2>
+          <p class="price">$<?php echo CFS()->get( 'price' ); ?></p>
+          <?php the_content(); ?>
+				</div>
 
 		<?php endwhile; // End of the loop. ?>
 

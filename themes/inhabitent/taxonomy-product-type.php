@@ -19,37 +19,24 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
-		<section class ="product-grid">
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+		<section class="product-grid-container">
+        <?php while ( have_posts() ) : the_post(); ?>
+          <div class="product-grid-item">
+            <div class="thumbnail-wrapper">
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'medium' ); ?></a>
+            </div>
+            <div class="product-info">
+              <h2 class="entry-title"> <?php the_title(); ?></h2>
+              <span class= "prices"> ......<?php echo CFS()->get( 'price' ); ?></span>
+            </div>
+          </div>
+      </setion>
 
-			<section class ="product-grid-items">
-        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-          <header class="entry-header">
-            <?php if ( has_post_thumbnail() ) : ?>
-              <?php the_post_thumbnail( 'medium' ); ?>
-            <?php endif; ?>
-
-            <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-            <?php if ( 'post' === get_post_type() ) : ?>
-            <div class="entry-meta">
-              <?php red_starter_posted_on(); ?> / <?php red_starter_posted_by(); ?>
-            </div><!-- .entry-meta -->
-            <?php endif; ?>
-          </header><!-- .entry-header -->
-
-          <div class="entry-content">
-            <?php echo CFS()->get( 'price' ); ?>
-          </div><!-- .entry-content -->
-        </article><!-- #post-## -->
-			</section>
 
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
 
-		</section>
 
 		<?php else : ?>
 
@@ -61,3 +48,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
+
