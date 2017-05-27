@@ -714,6 +714,61 @@ a {
             flex: 0 1 23%;
         margin-bottom: 1.5rem; }
 
+.blog #masthead {
+  border-bottom: 1px solid #e1e1e1;
+  padding: .5rem 0; }
+
+.blog #content {
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 55px;
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.post {
+  padding-top: 3rem;
+  padding-right: 5%;
+  border-right: 1px solid #e1e1e1;
+  margin-right: 0;
+  margin-left: 0;
+  width: 73%; }
+  .post .entry-header {
+    position: relative; }
+    .post .entry-header h2.entry-title {
+      background-color: #248a83;
+      color: #fff;
+      position: absolute;
+      top: 0;
+      margin-top: 2.25rem;
+      padding: .5rem 1rem;
+      font-size: 2.1rem; }
+    .post .entry-header p.entry-meta {
+      background-color: #248a83;
+      color: #fff;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin-bottom: 0;
+      margin-top: 0; }
+
+.widget-area {
+  padding-left: 5%;
+  padding-top: 5%;
+  width: 27%; }
+  .widget-area #text-3, .widget-area #business-hours-2 {
+    margin: 0 0 3rem; }
+    .widget-area #text-3 .widget-title, .widget-area #business-hours-2 .widget-title {
+      color: #2f1339; }
+  .widget-area #archives-2 .widget-title {
+    color: #2f1339; }
+  .widget-area #archives-2 ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0; }
+    .widget-area #archives-2 ul li a {
+      color: #248a83; }
+
 footer#colophon.site-footer {
   background: url(../../project-04/images/dark-wood.png);
   background-size: 512px 512px;

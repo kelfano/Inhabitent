@@ -11,32 +11,6 @@ get_header();
 <?php endwhile; endif; ?>
 </div>
 
-<!--<section class ="shop-stuff">
-  <h1>shop stuff</h1>
-  <div class ="wrapper">
-    <div>
-    <img src="http://tent.academy.red/wp-content/themes/inhabitent/images/do.svg" alt="Do">
-    <p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
-    <a href="<?php echo site_url('');?>">Do stuff</a>
-    </div>
-    <div>
-    <img src="http://tent.academy.red/wp-content/themes/inhabitent/images/eat.svg" alt="Eat">
-    <p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
-    <a href="<?php echo site_url('');?>">Eat stuff</a>
-    </div>
-    <div>
-    <img src="http://tent.academy.red/wp-content/themes/inhabitent/images/sleep.svg" alt="Sleep">
-    <p>Get a good night's rest in the wild in a home away from home that travels well.</p>
-    <a href="<?php echo site_url('');?>">Sleep stuff</a>
-    </div>
-    <div>
-    <img src="http://tent.academy.red/wp-content/themes/inhabitent/images/wear.svg" alt="Wear">
-    <p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
-    <a href="<?php echo site_url('');?>">Wear stuff</a>
-    </div>
-  </div>
-</section>-->
-
 <section class ="product-info container">
   <h1>shop stuff </h1>
   <?php $product_types = get_terms(array(

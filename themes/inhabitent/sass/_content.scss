@@ -181,6 +181,86 @@
 	}
 }
 
+//Journal post 
+.blog #masthead{
+	border-bottom: 1px solid #e1e1e1;
+	padding: .5rem 0;
+}
+
+.blog #content{
+	display: flex;
+	padding-top: 55px;
+	width: 1120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+	.post{
+		padding-top: 3rem;
+		padding-right: 5%;
+		border-right: 1px solid #e1e1e1;
+		margin-right: 0;
+		margin-left: 0;
+		width: 73%;
+
+		.entry-header{
+			position: relative;
+
+			h2.entry-title{
+				background-color: #248a83;
+				color:#fff;
+				position: absolute;
+				top: 0;
+				margin-top: 2.25rem;
+				padding: .5rem 1rem;
+				font-size: 2.1rem;
+			}
+
+			p.entry-meta{
+				background-color: #248a83;
+				color:#fff;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				margin-bottom: 0;
+				margin-top: 0;
+			}
+		}
+	}
+
+	.widget-area{
+		padding-left: 5%;
+		padding-top: 5%;
+		width: 27%;
+
+		#text-3, #business-hours-2{
+			margin: 0 0 3rem;
+
+			.widget-title{
+				color: #2f1339;
+			}
+		}
+
+		#archives-2{
+
+			.widget-title{
+				color:#2f1339;
+			}
+
+			ul{
+				list-style-type: none;
+				margin-left: 0;
+				padding-left: 0;
+
+				li a{
+					color:#248a83;
+				}
+			}
+		}
+	}
+
+
+
 //footer
 footer#colophon.site-footer{
 		background: url(../../project-04/images/dark-wood.png);
