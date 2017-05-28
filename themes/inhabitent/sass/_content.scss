@@ -195,7 +195,7 @@
 	margin-right: auto;
 }
 
-	.post{
+	.post-container{
 		padding-top: 3rem;
 		padding-right: 5%;
 		border-right: 1px solid #e1e1e1;
@@ -213,7 +213,14 @@
 				top: 0;
 				margin-top: 2.25rem;
 				padding: .5rem 1rem;
-				font-size: 2.1rem;
+				font-size: 1.8rem;
+				max-width: 75%;
+
+				a{
+					text-decoration: none;
+					color: #ffffff;
+					text-transform: uppercase;
+				}
 			}
 
 			p.entry-meta{
@@ -259,6 +266,57 @@
 		}
 	}
 
+//Single Journal post
+.post-template-default{
+
+	#masthead{
+		padding: .5rem 0;
+		border-bottom: 1px solid #e1e1e1;
+	}
+
+	.site-content{
+		display: flex;
+		padding-top: 55px;
+		width: 1120px;
+		margin-left: auto;
+		margin-right: auto;
+
+		.content-area{
+			padding-top: 3rem;
+			padding-bottom: 3rem;
+			border-right: 1px solid #e1e1e1;
+			width: 73%;
+
+			.entry-header{
+				position: relative;
+
+				.entry-title{
+					background-color: #248a83;
+					color:#fff;
+					position: absolute;
+					top: 0;
+					margin-top: 2.25rem;
+					padding: .5rem 1rem;
+					font-size: 1.8rem;
+					max-width: 75%;
+					text-transform: uppercase;
+
+				.entry-meta{
+					background-color: #248a83;
+					color:#fff;
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					text-transform: uppercase;
+				}
+				
+				}
+			}
+		}
+	}
+}
+
+
 
 
 //footer
@@ -299,7 +357,7 @@ footer#colophon.site-footer{
 					color:#ffffff;
 				}
 			}
-		}		
+}		
 
 .footer-blocks-item:last-child{
 	width:50%;
@@ -316,14 +374,14 @@ footer#colophon.site-footer{
 					// 	height:280px
 					// 	width:50px;
 					// }
-	}
+}
 	
-	.site-info{
-		width:100%;
-	  text-align:center;
+.site-info{
+	width:100%;
+	text-align:center;
 
-		p{
+	p{
 			color:#ffffff;
-		}
-	}	
-	
+	}
+}	
+

@@ -241,9 +241,6 @@ h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
 /* Copy */
-p {
-  margin-bottom: 1.5rem; }
-
 dfn, cite, em, i {
   font-style: italic; }
 
@@ -484,7 +481,7 @@ a {
   text-align: right;
   width: 50%; }
 
-.site-header {
+.post-type-archive .site-header, .tax-product-type .site-header, .single-products .site-header, .blog .site-header, .single-post .site-header, .page-template-default .site-header {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
@@ -495,23 +492,51 @@ a {
   -ms-flex-align: center;
       align-items: center;
   border-bottom: none; }
-  .site-header a {
+  .post-type-archive .site-header a, .tax-product-type .site-header a, .single-products .site-header a, .blog .site-header a, .single-post .site-header a, .page-template-default .site-header a {
     text-decoration: none;
-    color: white; }
-    .site-header a img {
+    color: #248a83; }
+    .post-type-archive .site-header a img, .tax-product-type .site-header a img, .single-products .site-header a img, .blog .site-header a img, .single-post .site-header a img, .page-template-default .site-header a img {
       width: 70px;
       height: 33px;
       margin-left: 10rem; }
-  .site-header nav.main-navigation {
+  .post-type-archive .site-header nav.main-navigation, .tax-product-type .site-header nav.main-navigation, .single-products .site-header nav.main-navigation, .blog .site-header nav.main-navigation, .single-post .site-header nav.main-navigation, .page-template-default .site-header nav.main-navigation {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: end;
         justify-content: flex-end; }
-    .site-header nav.main-navigation div ul li {
+    .post-type-archive .site-header nav.main-navigation div ul li, .tax-product-type .site-header nav.main-navigation div ul li, .single-products .site-header nav.main-navigation div ul li, .blog .site-header nav.main-navigation div ul li, .single-post .site-header nav.main-navigation div ul li, .page-template-default .site-header nav.main-navigation div ul li {
       padding: 0 1em; }
-      .site-header nav.main-navigation div ul li a {
-        color: white; }
-  .site-header i {
+      .post-type-archive .site-header nav.main-navigation div ul li a, .tax-product-type .site-header nav.main-navigation div ul li a, .single-products .site-header nav.main-navigation div ul li a, .blog .site-header nav.main-navigation div ul li a, .single-post .site-header nav.main-navigation div ul li a, .page-template-default .site-header nav.main-navigation div ul li a {
+        color: #248a83; }
+  .post-type-archive .site-header i, .tax-product-type .site-header i, .single-products .site-header i, .blog .site-header i, .single-post .site-header i, .page-template-default .site-header i {
+    color: #248a83; }
+
+.home .site-header, .page-template .site-header {
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+  -ms-flex-align: center;
+      align-items: center;
+  border-bottom: none; }
+  .home .site-header a, .page-template .site-header a {
+    text-decoration: none;
+    color: white; }
+    .home .site-header a img, .page-template .site-header a img {
+      width: 70px;
+      height: 33px;
+      margin-left: 10rem; }
+  .home .site-header nav.main-navigation, .page-template .site-header nav.main-navigation {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end; }
+    .home .site-header nav.main-navigation div ul li, .page-template .site-header nav.main-navigation div ul li {
+      padding: 0 1em; }
+  .home .site-header i, .page-template .site-header i {
     color: white; }
 
 /*--------------------------------------------------------------
@@ -726,24 +751,29 @@ a {
   margin-left: auto;
   margin-right: auto; }
 
-.post {
+.post-container {
   padding-top: 3rem;
   padding-right: 5%;
   border-right: 1px solid #e1e1e1;
   margin-right: 0;
   margin-left: 0;
   width: 73%; }
-  .post .entry-header {
+  .post-container .entry-header {
     position: relative; }
-    .post .entry-header h2.entry-title {
+    .post-container .entry-header h2.entry-title {
       background-color: #248a83;
       color: #fff;
       position: absolute;
       top: 0;
       margin-top: 2.25rem;
       padding: .5rem 1rem;
-      font-size: 2.1rem; }
-    .post .entry-header p.entry-meta {
+      font-size: 1.8rem;
+      max-width: 75%; }
+      .post-container .entry-header h2.entry-title a {
+        text-decoration: none;
+        color: #ffffff;
+        text-transform: uppercase; }
+    .post-container .entry-header p.entry-meta {
       background-color: #248a83;
       color: #fff;
       position: absolute;
@@ -768,6 +798,42 @@ a {
     padding-left: 0; }
     .widget-area #archives-2 ul li a {
       color: #248a83; }
+
+.post-template-default #masthead {
+  padding: .5rem 0;
+  border-bottom: 1px solid #e1e1e1; }
+
+.post-template-default .site-content {
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 55px;
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+  .post-template-default .site-content .content-area {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-right: 1px solid #e1e1e1;
+    width: 73%; }
+    .post-template-default .site-content .content-area .entry-header {
+      position: relative; }
+      .post-template-default .site-content .content-area .entry-header .entry-title {
+        background-color: #248a83;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        margin-top: 2.25rem;
+        padding: .5rem 1rem;
+        font-size: 1.8rem;
+        max-width: 75%;
+        text-transform: uppercase; }
+        .post-template-default .site-content .content-area .entry-header .entry-title .entry-meta {
+          background-color: #248a83;
+          color: #fff;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          text-transform: uppercase; }
 
 footer#colophon.site-footer {
   background: url(../../project-04/images/dark-wood.png);
