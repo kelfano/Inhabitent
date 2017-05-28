@@ -494,11 +494,10 @@ a {
   border-bottom: none; }
   .post-type-archive .site-header a, .tax-product-type .site-header a, .single-products .site-header a, .blog .site-header a, .single-post .site-header a, .page-template-default .site-header a {
     text-decoration: none;
-    color: #248a83; }
-    .post-type-archive .site-header a img, .tax-product-type .site-header a img, .single-products .site-header a img, .blog .site-header a img, .single-post .site-header a img, .page-template-default .site-header a img {
-      width: 70px;
-      height: 33px;
-      margin-left: 10rem; }
+    color: #248a83;
+    width: 70px;
+    height: 33px;
+    margin-left: 10rem; }
   .post-type-archive .site-header nav.main-navigation, .tax-product-type .site-header nav.main-navigation, .single-products .site-header nav.main-navigation, .blog .site-header nav.main-navigation, .single-post .site-header nav.main-navigation, .page-template-default .site-header nav.main-navigation {
     display: -ms-flexbox;
     display: flex;
@@ -835,6 +834,17 @@ a {
           bottom: 0;
           text-transform: uppercase; }
 
+.page-template-default .site-content {
+  display: -ms-flexbox;
+  display: flex;
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px; }
+  .page-template-default .site-content .site-main {
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+
 footer#colophon.site-footer {
   background: url(../../project-04/images/dark-wood.png);
   background-size: 512px 512px;
@@ -946,6 +956,60 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.page-template .product-info-container {
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+  .page-template .product-info-container h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: #2f1339;
+    font-weight: 400; }
+  .page-template .product-info-container .product-type-block {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    text-align: center; }
+    .page-template .product-info-container .product-type-block .product-type-block-wrapper {
+      border: 1px solid #e1e1e1;
+      border-top-width: 5px;
+      padding: .75rem;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%; }
+      .page-template .product-info-container .product-type-block .product-type-block-wrapper img {
+        width: 70px;
+        height: 70px; }
+
+.page-template .inhabitent-journal h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #2f1339;
+  text-transform: uppercase;
+  margin-bottom: 3.5rem; }
+
+.page-template .inhabitent-journal .wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .page-template .inhabitent-journal .wrapper ul.home-post {
+    list-style-type: none;
+    border: 1px solid #e1e1e1;
+    -ms-flex: 0 1 33%;
+        flex: 0 1 33%;
+    position: relative;
+    padding-left: 0; }
+    .page-template .inhabitent-journal .wrapper ul.home-post li {
+      overflow: hidden; }
+      .page-template .inhabitent-journal .wrapper ul.home-post li img {
+        width: 100%; }
+      .page-template .inhabitent-journal .wrapper ul.home-post li li h2 {
+        font-size: .75rem;
+        font-weight: 100; }
+
 /*--------------------------------------------------------------
 # About Page
 --------------------------------------------------------------*/

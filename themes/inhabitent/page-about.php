@@ -1,7 +1,6 @@
 <?php  /* Template Name: About US Page */
-get_header();
+get_header("");
 ?>
-
 
 <div class="img custom-hero">
   <h1><?php echo get_the_title();?></h1>

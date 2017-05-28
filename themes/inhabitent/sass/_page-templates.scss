@@ -3,3 +3,77 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+.page-template{
+
+  .product-info-container{
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+
+    h1{
+    text-align: center;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: #2f1339;
+    font-weight: 400;
+    }
+
+    .product-type-block{
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+
+      .product-type-block-wrapper{
+        border: 1px solid #e1e1e1;
+        border-top-width: 5px;
+        padding: .75rem;
+        flex: 0 1 25%;
+
+        img{
+          width:70px;
+          height:70px;
+        }
+      }
+    }
+  }
+
+  .inhabitent-journal{
+
+    h1{
+      text-align: center;
+      font-size: 2.4rem;
+      font-weight: 400;
+      color: #2f1339;
+      text-transform: uppercase;
+      margin-bottom: 3.5rem;
+    }
+
+    .wrapper{
+      display: flex;
+      justify-content: space-between;
+
+      ul.home-post{
+        list-style-type: none;
+        border: 1px solid #e1e1e1;
+        flex: 0 1 33%;
+        position: relative;
+        padding-left: 0;
+
+          li{
+            overflow:hidden;
+
+            img{
+              width:100%
+            }
+
+          li h2{
+            font-size: .75rem;
+            font-weight: 100;
+          }
+        }
+      }
+    }
+  }
+
+}
