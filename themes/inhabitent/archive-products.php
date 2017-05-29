@@ -32,7 +32,7 @@ get_header(); ?>
 								<?php foreach($product_types as $product_type):?>
 								
 
-								<a href="<?php echo get_term_link($product_type);?>"
+									<a href="<?php echo get_term_link($product_type);?>"
 								<h3><?php echo $product_type ->name;?></h3>
 								</a>
 
@@ -52,7 +52,7 @@ get_header(); ?>
             </div>
             <div class="product-info">
               <h2 class="entry-title"> <?php the_title(); ?></h2>
-              <span class= "prices"> ......<?php echo CFS()->get( 'price' ); ?></span>
+              <span class= "prices"> ......$<?php echo CFS()->get( 'price' ); ?></span>
             </div>
           </div>
       </setion>

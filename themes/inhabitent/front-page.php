@@ -70,10 +70,23 @@ get_header();
       <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
       
         <ul class ="home-post">
-          <li><img src="<?php echo the_post_thumbnail_url('medium'); ?>"></li>
-          <li><h2><?php echo get_the_date() . ' / ' . strval(wp_count_comments(get_the_ID())->total_comments) . ' comments' ;?></h2> </li>
-          <li> <h2> <?php echo get_the_title();?> </h2> </li>
-          <li><a href="<?php echo get_permalink();?>">Read Entry</a></li>
+          <li>
+            <div class="thumbnail-wrapper">
+              <img src="<?php echo the_post_thumbnail_url('large'); ?>">
+            </div>
+    
+          <div class ="post-info-wrapper">
+            <span class = "entry-meta">
+              <h2><?php echo get_the_date() . ' / ' . strval(wp_count_comments(get_the_ID())->total_comments) . ' comments' ;?></h2> 
+            </span>
+
+          <span class = "entry-title">
+            <h2> <?php echo get_the_title();?> </h2>
+          </span>
+
+          <a class="black-btn" href="<?php echo get_permalink();?>">Read Entry</a>
+    
+          </li>
         </ul>
       <?php
       endwhile;

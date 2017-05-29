@@ -21,6 +21,20 @@ get_header(); ?>
           <h2 class="product-title"><?php the_title(); ?></h2>
           <p class="price">$<?php echo CFS()->get( 'price' ); ?></p>
           <?php the_content(); ?>
+
+					<div class= "social-buttons">
+						<button type ="button" class="black-btn">
+							<i class ="fa fa-facebook"> Like </i>
+						</button>
+
+						<button type ="button" class="black-btn">
+							<i class ="fa fa-twitter"> Tweet </i>
+						</button>
+
+						<button type ="button" class="black-btn">
+							<i class ="fa fa-pinterest"> Pin </i>
+						</button>
+
 				</div>
 
 		<?php endwhile; // End of the loop. ?>
