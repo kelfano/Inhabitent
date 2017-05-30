@@ -82,11 +82,13 @@
 				p.price{
 					font-size:1.8rem;
 					margin-top: 0;
+					font-family: novecentosans,sans-serif;
 				}
 
 				p{
 					line-height: 1.75rem;
-					font-size: 1.1rem;
+					font-size: 1rem;
+					font-family: merriweather,serif;
 				}
 
 				.social-buttons{
@@ -126,11 +128,16 @@
 					h1{
 						text-align:center;
 						text-transform:uppercase;
+						font-family: novecentosans,sans-serif;
 					}
 
 					div.taxonomy-description{
 						text-align: center;
 						margin: 2rem auto 3rem;
+
+						p{
+							font-family: merriweather,serif;
+						}
 					}
 			}
 	
@@ -161,6 +168,7 @@
 								display:inline;
 								font-size: 1rem;
 								font-weight: 400;
+								font-family: merriweather,serif;
 							}
 						}
 					}
@@ -187,6 +195,7 @@
 					text-align: center;
 					text-transform: uppercase;
 					font-size: 2.4rem;
+					font-family: novecentosans,sans-serif;
 				}
 
 				ul{
@@ -232,6 +241,7 @@
 								display:inline;
 								font-size: 1rem;
 								font-weight: 400;
+								font-family: merriweather,serif;
 							}
 						}
 						
@@ -293,6 +303,10 @@
 				margin-top: 0;
 			}
 		}
+
+		  p{
+				font-family: merriweather,serif;
+			}
 	}
 
 	.widget-area{
@@ -300,30 +314,40 @@
 		padding-top: 5%;
 		width: 27%;
 
-		#text-3, #business-hours-2{
-			margin: 0 0 3rem;
-
-			.widget-title{
-				color: #2f1339;
-			}
+		.textwidget{
+				font-family: merriweather,serif;
 		}
 
-		#archives-2{
+			#text-3, #business-hours-2{
+				margin: 0 0 3rem;
 
-			.widget-title{
-				color:#2f1339;
-			}
+				p{
+						font-family: merriweather,serif;
+				}
 
-			ul{
-				list-style-type: none;
-				margin-left: 0;
-				padding-left: 0;
+				.widget-title{
+					color: #2f1339;
 
-				li a{
-					color:#248a83;
 				}
 			}
-		}
+
+			#archives-2{
+
+				.widget-title{
+					color:#2f1339;
+					}
+
+				ul{
+					list-style-type: none;
+					margin-left: 0;
+					padding-left: 0;
+
+					li a{
+						color:#248a83;
+						font-family: merriweather,serif;
+					}
+				}
+			}
 	}
 
 //Single Journal post
@@ -372,6 +396,13 @@
 
 				}
 			}
+
+			.entry-content{
+
+				p{
+					font-family: merriweather,serif;
+				}
+			}
 		}
 	}
 }
@@ -395,11 +426,16 @@
 				padding-top: 3rem;
 				padding-bottom: 3rem;
 
-				h2{
+				.entry-content h2{
 					color: #2f1339;
 					font-size: 1.8rem;
 					margin-bottom: 1.5rem;
 					text-transform: uppercase;
+					font-family: novecentosans,sans-serif;
+				}
+
+				.entry-content p{
+					font-family: merriweather,serif;
 				}
 
 				div.wpcf7{
@@ -453,10 +489,6 @@ footer#colophon.site-footer{
 			margin:3rem 0;
 			padding-right:1.5rem;
 
-			// business-hours span{
-			// 	font-weight: bold;
-			// }
-
 			h3{
 				color:#d99054;
 				text-transform: uppercase;
@@ -481,11 +513,6 @@ footer#colophon.site-footer{
 	margin:1rem 0;
 	display:flex;
 	justify-content: flex-end;
-
-					// img{
-					// 	height:280px
-					// 	width:50px;
-					// }
 }
 	
 .site-info{

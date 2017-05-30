@@ -69,10 +69,6 @@ function inhabitent_theme_archive_title( $title ) {
 add_filter( 'get_the_archive_title', 'inhabitent_theme_archive_title' );
 
 
-
-
-
-
 //Change the order and number of results on product/product type archives
 function inhabitent_modify_archive_queries( $query ) { 
 	if(

@@ -22,12 +22,17 @@
 
 			<header id="masthead" class="site-header" role="banner">
 				<!--<div class ="header-logo">-->
+
+					<div class = "site-header-logo">
+						
 					<a href="<?php echo site_url();?>">
 					<?php if (is_page('home') || is_page('about')){ ?>
 						<img src="<?php echo get_template_directory_uri()?>/project-04/images/logos/inhabitent-logo-tent-white.svg"></a>
 					<?php }else{ ?>
 						<img src="<?php echo get_template_directory_uri()?>/project-04/images/logos/inhabitent-logo-tent.svg"></a>
 					<?php } ?>
+					</div>
+
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>

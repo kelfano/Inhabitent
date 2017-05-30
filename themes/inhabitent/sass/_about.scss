@@ -20,10 +20,16 @@ div.img{
 div.post{
 	width: 60%;
 	margin: 0 auto;
+
 	h2{
 		text-align: center;
     color:#2f1339;
     font-size:2.1rem;
     text-transform: uppercase;
+		font-family: novecentosans,sans-serif;
+	}
+
+	p{
+		font-family: merriweather,serif;
 	}
 }
