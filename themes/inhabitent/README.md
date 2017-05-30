@@ -1,21 +1,17 @@
-# RED Starter
+# Inhabitent wordpress websites (Objectives)
+This project included multiple-pages website built for an outdoor company named Inhabitent. It is built using wordpress as a Content Management System (CMS). 
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+##Technology used in the project
+-HTML
+-SCSS (Flexbox, Box-Model)
+-Custom theme
+-Wordpress template file hierarchy (Custom Post-Type, Custom Taxonomy)
+-PHP as a server script language
+-MAMP as a local server
+-Plugins (Theme check, Custom field Suite)
 
-## Installation
+## What I learned
+From this project, I have learnt how to categories the section for multiple pages websites using the wordpress template hierarchy. Static pages included About page, Contact us page while the dynamic webpages (those that can be customized by the user) are custom post-type page, custom-taxonomy page, archive-product page..etc 
 
-### 1. Download me (don't clone me!)
+In order to write PHP functions, I have spent some time to figure out when to use the right function based on the PHP documentation. From then, the project is more about pinning down the styling on each page.
 
-Then add me to your `wp-content` directory.
-
-### 2. Rename the `redstarter` directory
-
-Make sure that the theme directory name is project appropriate!
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `inhabitent.dev` to the appropriate localhost URL).
