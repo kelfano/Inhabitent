@@ -145,35 +145,151 @@
       margin-bottom: 3.5rem;
       padding-left: 0;
       display: flex;
-      flex-wrap: wrap;
+      height:35rem;
 
-      li{
-        flex: 0 1 50%;
+    }
 
-        .story-wrapper{
+  }//.adventures-container
+
+      .story-wrapper-left {
+          height: 100%;
+          width: 50%;
+          overflow: hidden;
           position: relative;
+          flex-basis: 50%;
+          background-image: url(../../project-04/images/adventure-photos/canoe-girl.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+
 
           .story-info{
-            position: absolute;
-            top: 0;
 
-            .entry-title a{
-              font-size: 2.5rem;
-              font-weight: 400;
-              width: 75%;
-              // margin-left: 2rem;
-              color: #fff;
-              text-decoration: none;
+            h3{
+            position: absolute;
+
+              a{
+                color: #fff;
+                font-size: 3rem;
+                font-weight: 400;
+                width: 75%;
+                text-decoration: none;
+              } 
             }
 
-            .white-btn {
-              color: #fff;
+            .white-btn{
+              position: absolute;
+              top: 8rem;
+              color:#fff;
               border: 1px solid #fff;
               padding: .75rem 1.5rem;
               margin: 2rem;
-            }
           }
-        }
-      }
-    }
-  }
+
+        } 
+      }//.story-wrapper-left
+
+        .story-grid-wrapper{
+            display: flex;
+            flex-direction: column;
+            flex-basis: 50%;
+            width: 50%;
+            overflow: hidden;
+
+            .story-wrapper-top{
+              height: 50%;
+              position: relative;
+              background-image: url(../../project-04/images/adventure-photos/beach-bonfire.jpg);
+              background-size: cover;
+              background-repeat: no-repeat;
+
+
+             .story-info{
+                position: absolute;
+                top: 0;
+
+                .entry-title a{
+                  font-size: 2.4rem;
+                  font-weight: 400;
+                  width: 75%;
+                  color: #fff;
+                  text-decoration: none;
+                }
+
+                .white-btn {
+                  color: #fff;
+                  border: 1px solid #fff;
+                  padding: .75rem 1.5rem;
+                  margin: 2rem;
+                }
+              }
+            }
+          }// .story-grid-wrapper
+
+            .story-grid-wrapper-inner{
+              height: 50%;
+              width: 100%;
+              display: flex;
+
+              .story-wrapper-bottom-left{
+                width: 50%;
+                position: relative;
+                background-image: url(../../project-04/images/adventure-photos/mountain-hikers.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+
+
+                 .story-info{
+                    position: absolute;
+                    top: 0;
+
+                    .entry-title a{
+                      font-size: 1.6rem;
+                      font-weight: 400;
+                      width: 75%;
+                      // margin-left: 2rem;
+                      color: #fff;
+                      text-decoration: none;
+                    }
+
+                    .white-btn {
+                      color: #fff;
+                      border: 1px solid #fff;
+                      padding: .75rem 1.5rem;
+                      margin: 2rem;
+                    }
+                  }
+                }
+
+
+                .story-wrapper-bottom-right{
+                width: 50%;
+                position: relative;
+                background-image: url(../../project-04/images/adventure-photos/night-sky.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+
+
+                 .story-info{
+                    position: absolute;
+                    top: 0;
+
+                    .entry-title a{
+                      font-size: 1.6rem;
+                      font-weight: 400;
+                      width: 75%;
+                      // margin-left: 2rem;
+                      color: #fff;
+                      text-decoration: none;
+                    }
+
+                    .white-btn {
+                      color: #fff;
+                      border: 1px solid #fff;
+                      padding: .75rem 1.5rem;
+                      margin: 2rem;
+                    }
+                  }
+                }
+            }// .story-grid-wrapper-inner
+    
+

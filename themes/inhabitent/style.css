@@ -558,9 +558,27 @@ a {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: end;
-        justify-content: flex-end; }
+        justify-content: flex-end;
+    -ms-flex-align: center;
+        align-items: center; }
     .home .site-header nav.main-navigation div ul li, .page-template .site-header nav.main-navigation div ul li {
       padding: 0 1em; }
+    .home .site-header nav.main-navigation .search-form, .page-template .site-header nav.main-navigation .search-form {
+      display: none; }
+      .home .site-header nav.main-navigation .search-form fieldset, .page-template .site-header nav.main-navigation .search-form fieldset {
+        border: 0; }
+        .home .site-header nav.main-navigation .search-form fieldset .search-field, .page-template .site-header nav.main-navigation .search-form fieldset .search-field {
+          border: 0;
+          background: transparent;
+          font-size: 1rem;
+          text-transform: uppercase;
+          color: #fff; }
+        .home .site-header nav.main-navigation .search-form fieldset ::-webkit-input-placeholder, .page-template .site-header nav.main-navigation .search-form fieldset ::-webkit-input-placeholder {
+          color: #fff; }
+        .home .site-header nav.main-navigation .search-form fieldset :-ms-input-placeholder, .page-template .site-header nav.main-navigation .search-form fieldset :-ms-input-placeholder {
+          color: #fff; }
+        .home .site-header nav.main-navigation .search-form fieldset ::placeholder, .page-template .site-header nav.main-navigation .search-form fieldset ::placeholder {
+          color: #fff; }
   .home .site-header i, .page-template .site-header i {
     color: white; }
 
@@ -832,7 +850,9 @@ a {
   margin-left: 0;
   width: 73%; }
   .post-container .entry-header {
-    position: relative; }
+    position: relative;
+    height: 30rem;
+    overflow: hidden; }
     .post-container .entry-header h2.entry-title {
       background-color: #248a83;
       color: #fff;
@@ -1172,27 +1192,109 @@ object {
     padding-left: 0;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .adventures-container ul li {
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%; }
-      .adventures-container ul li .story-wrapper {
-        position: relative; }
-        .adventures-container ul li .story-wrapper .story-info {
-          position: absolute;
-          top: 0; }
-          .adventures-container ul li .story-wrapper .story-info .entry-title a {
-            font-size: 2.5rem;
-            font-weight: 400;
-            width: 75%;
-            color: #fff;
-            text-decoration: none; }
-          .adventures-container ul li .story-wrapper .story-info .white-btn {
-            color: #fff;
-            border: 1px solid #fff;
-            padding: .75rem 1.5rem;
-            margin: 2rem; }
+    height: 35rem; }
+
+.story-wrapper-left {
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background-image: url(../../project-04/images/adventure-photos/canoe-girl.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .story-wrapper-left .story-info h3 {
+    position: absolute; }
+    .story-wrapper-left .story-info h3 a {
+      color: #fff;
+      font-size: 3rem;
+      font-weight: 400;
+      width: 75%;
+      text-decoration: none; }
+  .story-wrapper-left .story-info .white-btn {
+    position: absolute;
+    top: 8rem;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: .75rem 1.5rem;
+    margin: 2rem; }
+
+.story-grid-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  width: 50%;
+  overflow: hidden; }
+  .story-grid-wrapper .story-wrapper-top {
+    height: 50%;
+    position: relative;
+    background-image: url(../../project-04/images/adventure-photos/beach-bonfire.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .story-grid-wrapper .story-wrapper-top .story-info {
+      position: absolute;
+      top: 0; }
+      .story-grid-wrapper .story-wrapper-top .story-info .entry-title a {
+        font-size: 2.4rem;
+        font-weight: 400;
+        width: 75%;
+        color: #fff;
+        text-decoration: none; }
+      .story-grid-wrapper .story-wrapper-top .story-info .white-btn {
+        color: #fff;
+        border: 1px solid #fff;
+        padding: .75rem 1.5rem;
+        margin: 2rem; }
+
+.story-grid-wrapper-inner {
+  height: 50%;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex; }
+  .story-grid-wrapper-inner .story-wrapper-bottom-left {
+    width: 50%;
+    position: relative;
+    background-image: url(../../project-04/images/adventure-photos/mountain-hikers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .story-grid-wrapper-inner .story-wrapper-bottom-left .story-info {
+      position: absolute;
+      top: 0; }
+      .story-grid-wrapper-inner .story-wrapper-bottom-left .story-info .entry-title a {
+        font-size: 1.6rem;
+        font-weight: 400;
+        width: 75%;
+        color: #fff;
+        text-decoration: none; }
+      .story-grid-wrapper-inner .story-wrapper-bottom-left .story-info .white-btn {
+        color: #fff;
+        border: 1px solid #fff;
+        padding: .75rem 1.5rem;
+        margin: 2rem; }
+  .story-grid-wrapper-inner .story-wrapper-bottom-right {
+    width: 50%;
+    position: relative;
+    background-image: url(../../project-04/images/adventure-photos/night-sky.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .story-grid-wrapper-inner .story-wrapper-bottom-right .story-info {
+      position: absolute;
+      top: 0; }
+      .story-grid-wrapper-inner .story-wrapper-bottom-right .story-info .entry-title a {
+        font-size: 1.6rem;
+        font-weight: 400;
+        width: 75%;
+        color: #fff;
+        text-decoration: none; }
+      .story-grid-wrapper-inner .story-wrapper-bottom-right .story-info .white-btn {
+        color: #fff;
+        border: 1px solid #fff;
+        padding: .75rem 1.5rem;
+        margin: 2rem; }
 
 /*--------------------------------------------------------------
 # About Page

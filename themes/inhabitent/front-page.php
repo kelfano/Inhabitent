@@ -104,9 +104,10 @@ get_header();
   <section class ="adventures-container">
     <h2>Latest Adventures</h2>
       <ul class = "clearfix">
-        <li>
-          <div class = "story-wrapper">
-            <img src="<?php echo get_template_directory_uri()?>/project-04/images/adventure-photos/canoe-girl.jpg" class="adventure-logo" alt="Canoe-Girl">
+
+        <li class = "story-wrapper-left">
+
+            <!--<img src="<?php echo get_template_directory_uri()?>/project-04/images/adventure-photos/canoe-girl.jpg" class="adventure-logo" alt="Canoe-Girl">-->
             <div class = "story-info">
               <h3 class = "entry-title">
                 <a href = "#"> Getting Back to Nature in a Canoe </a> 
@@ -114,35 +115,41 @@ get_header();
               <a class = "white-btn" href = "#"> Read More </a>
             </div>
         </li>
-        <li>
-            <div class = "story-wrapper">
-            <img src="<?php echo get_template_directory_uri()?>/project-04/images/adventure-photos/beach-bonfire.jpg" class="adventure-logo" alt="Beach-Bonfire">
+
+        <li class = "story-grid-wrapper"> 
+          <div class = "story-wrapper-top">
+            <!--<img src="<?php echo get_template_directory_uri()?>/project-04/images/adventure-photos/beach-bonfire.jpg" class="adventure-logo" alt="Beach-Bonfire">-->
             <div class = "story-info">
               <h3 class = "entry-title">
                 <a href = "#"> A Night with Friends at the Beach </a> 
               </h3>
               <a class = "white-btn" href = "#"> Read More </a>
             </div>
-        </li>
-        <li>
-            <div class = "story-wrapper">
-            <img src="<?php echo get_template_directory_uri()?>/project-04/images/adventure-photos/mountain-hikers.jpg" class="adventure-logo" alt="Mountain-Hikers">
+          </div>
+
+         <div class = "story-grid-wrapper-inner">
+            <div class = "story-wrapper-bottom-left">
+              <!--<img src="<?php echo get_template_directory_uri()?>/project-04/images/adventure-photos/mountain-hikers.jpg" class="adventure-logo" alt="Mountain-Hikers">-->
             <div class = "story-info">
               <h3 class = "entry-title">
                 <a href = "#"> Taking in the View at Big Mountain </a>
               </h3>
               <a class = "white-btn" href = "#"> Read More </a>
             </div>
-        </li>
-        <li>
-            <div class = "story-wrapper">
-            <img src="<?php echo get_template_directory_uri()?>/project-04/images/adventure-photos/night-sky.jpg" class="adventure-logo" alt="Night-Sky">
-            <div class = "story-info">
-              <h3 class = "entry-title">
-                <a href = "#"> Star-Gazing at the Night Sky</a> 
-              </h3>
-              <a class = "white-btn" href = "#"> Read More </a>
+          </div>
+
+
+            <div class = "story-wrapper-bottom-right">
+              <!--<img src="<?php echo get_template_directory_uri()?>/project-04/images/adventure-photos/night-sky.jpg" class="adventure-logo" alt="Night-Sky">-->
+              <div class = "story-info">
+                <h3 class = "entry-title">
+                  <a href = "#"> Star-Gazing at the Night Sky</a> 
+                </h3>
+                <a class = "white-btn" href = "#"> Read More </a>
+              </div>
             </div>
+        </div>
+        
         </li>
       </ul>
 

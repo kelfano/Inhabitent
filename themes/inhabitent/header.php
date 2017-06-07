@@ -13,6 +13,8 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+		
+
 	<?php wp_head(); ?>
 	</head>
 
@@ -36,12 +38,16 @@
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
+						<i class="fa fa-search"></i>
+						<?php get_search_form(); ?>
+
 					</nav><!-- #site-navigation -->
 					
-					<div class="search">
-						<i class="fa fa-search"></i>
-					</div>
-				<!--<div>-->
+			
+	<!--<div>-->
+
+
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
