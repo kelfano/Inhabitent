@@ -42,19 +42,19 @@
 								<span class="day-of-week">
 									Monday-Friday:
 								</span>
-								"9am to 5pm"
+								9am to 5pm
 							</p>
 							<p>
 								<span class="day-of-week">
 									Saturday:
 								</span>
-								"10am to 2pm"
+								10am to 2pm
 							</p>
 							<p>
 							<span class="day-of-week">
 									Sunday:
 								</span>
-								"closed"
+								Closed
 							</p>
 						</div>
 					</div>

@@ -1,0 +1,276 @@
+/*--------------------------------------------------------------
+# Search Page
+--------------------------------------------------------------*/
+
+
+.search-results{
+
+  .site-header{
+    display: flex;
+    padding: .5rem 0;
+    border-bottom: 1px solid #e1e1e1;
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .site-header-logo{
+    img{
+      width: 50px;
+      height: 33px;
+    }
+  }
+
+  .main-navigation{
+    display: flex;
+    justify-content: flex-end;
+
+    .menu-nav-menu-container{
+      li:nth-child(1){
+        padding-left: 1.5rem;
+
+        a{
+          color: #248a83;
+        }
+      }
+
+      li:nth-child(2){
+        padding-left: 1.5rem;
+
+        
+        a{
+          color: #248a83;
+        }
+      }
+
+      li:nth-child(3){
+        padding-left: 1.5rem;
+
+        a{
+          color: #248a83;
+        }
+      }
+
+      li:nth-child(4){
+        padding-left: 1.5rem;
+
+        a{
+          color: #248a83;
+        }
+      }  
+    }
+
+    .fa-search{
+      padding-left: 1.5rem;
+    }
+  }// end of main-navigation
+
+  .site-content{
+    display: flex;
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .content-area{
+      width: 73%;
+      padding-right: 5%;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      border-right: 1px solid #e1e1e1;
+
+      .page-header{
+        border-bottom: 1px solid #e1e1e1;
+        padding-bottom: 1rem;
+        margin-bottom: 3rem;
+
+        h1.page-title{
+          text-transform: uppercase;
+          margin-top: 0;
+          margin-bottom: 0;
+          font-size: 2.4rem;
+          font-family: 'Novecento Sans Web',sans-serif;
+        }
+      }
+
+      article{
+        margin: 0 0 4.5rem;
+
+        .entry-header{
+
+          h2.entry-title{
+            font-size: 2.1rem;
+            margin-bottom: 1.5rem;
+            font-family: 'Novecento Sans Web',sans-serif;
+
+            a{
+              color: #248a83;
+              text-decoration: none;
+              text-transform: uppercase;
+            }
+          }
+        }
+
+        .entry-summary{
+          
+          p{
+            margin-bottom: 1.5rem;
+          }
+
+          p{
+            a{
+              color: #000;
+              text-decoration: none;
+              text-transform: uppercase;
+              padding: .75rem 1.5rem;
+              border: 1px solid #000;
+            }
+
+            a:hover{
+              background-color: #248a83;
+              color: #fff;
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+/* 404 page */
+
+
+.search-no-results{
+
+  .site-header{
+    display: flex;
+    padding: .5rem 0;
+    border-bottom: 1px solid #e1e1e1;
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .site-header-logo{
+    img{
+      width: 50px;
+      height: 33px;
+    }
+  }
+
+  .main-navigation{
+    display: flex;
+    justify-content: flex-end;
+
+    .menu-nav-menu-container{
+      li:nth-child(1){
+        padding-left: 1.5rem;
+
+        a{
+          color: #248a83;
+        }
+      }
+
+      li:nth-child(2){
+        padding-left: 1.5rem;
+
+        
+        a{
+          color: #248a83;
+        }
+      }
+
+      li:nth-child(3){
+        padding-left: 1.5rem;
+
+        a{
+          color: #248a83;
+        }
+      }
+
+      li:nth-child(4){
+        padding-left: 1.5rem;
+
+        a{
+          color: #248a83;
+        }
+      }  
+    }
+
+    .fa-search{
+      padding-left: 1.5rem;
+    }
+  }
+
+  .site-content{
+    display: flex;
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .content-area{
+      width: 73%;
+      padding-right: 5%;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      border-right: 1px solid #e1e1e1;
+
+      .page-header{
+
+        h1.page-title{
+          text-transform: uppercase;
+          margin-top: 0;
+          margin-bottom: 0;
+          font-size: 2.4rem;
+          font-family: 'Novecento Sans Web',sans-serif;
+        }
+      }
+
+      .page-content{
+
+        p{
+          font-family: merriweather,serif;
+        }
+
+        .widget_recent_entries{
+
+          h2.widgettitle{
+            color: #2f1339;
+            text-transform: uppercase;
+            font-family: 'Novecento Sans Web',sans-serif;
+          }
+
+          ul{
+            list-style-type: none;
+            padding-left: 0;
+            margin-left: 0;
+
+            a{
+              color: #248a83;
+              text-decoration: none;
+              font-family: merriweather,serif;
+            }
+          }
+        }    
+       }
+
+        .widget_archive{
+          
+          h2.widgettitle{
+            color: #2f1339;
+            text-transform: uppercase;
+            font-family: 'Novecento Sans Web',sans-serif;
+          }
+
+          p{
+            font-family: merriweather,serif;
+          }
+        }
+     } 
+
+     .widget-area{
+       padding-bottom: 3rem;
+     }    
+  }
+} 

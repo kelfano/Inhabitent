@@ -186,10 +186,17 @@
 		.content-area{
 			padding-top: 3rem;
 			padding-bottom: 3rem;
+
+			.site-main{
+				width: 1120px;
+				margin-left: auto;
+				margin-right: auto;
+
+			}
 	
 			.page-header{
 				border-bottom: 1px dashed #c8c8c8;
-				margin: 0 18rem 3rem 18rem;
+				margin: 0 0 3rem;
 
 				h1{
 					text-align: center;
@@ -200,7 +207,9 @@
 
 				ul{
 					display: flex;
-					padding-left: 11rem;
+					justify-content: center;
+					margin-left: 0;
+					padding-left: 0;
 
 					a{
 						color:#248a83;
@@ -273,7 +282,10 @@
 		margin-left: 0;
 		width: 73%;
 
-		.entry-header{
+		article{
+			margin: 0 0 4.5rem;
+
+			.entry-header{
 			position: relative;
 			height: 30rem;
 			overflow: hidden;
@@ -306,9 +318,27 @@
 			}
 		}
 
-		  p{
+		  p.entry-content{
 				font-family: merriweather,serif;
 			}
+
+			p{
+				a{
+					color: #000;
+					text-decoration: none;
+					text-transform: uppercase;
+					padding: .75rem 1.5rem;
+					border: 1px solid #000;
+				}
+
+				a:hover{
+					background-color: #248a83;
+					color: #fff;
+					border: none;
+				}
+			}
+		}
+		
 	}
 
 	.widget-area{
@@ -428,6 +458,11 @@
 				padding-top: 3rem;
 				padding-bottom: 3rem;
 
+				h1.entry-title {
+
+					font-size: 2.4rem;
+				}
+
 				.entry-content h2{
 					color: #2f1339;
 					font-size: 1.8rem;
@@ -460,6 +495,7 @@
 							font-size: .8rem;
 							line-height: 1;
 							padding: .75rem 1.5rem;
+							border: none;
 						}
 					}
 				}
@@ -498,9 +534,12 @@ footer#colophon.site-footer{
 
 			p{
 				color:#ffffff;
+				
 
 				a{
 					color:#ffffff;
+					text-decoration: none;
+					font-family: Merriweather Web,serif;
 				}
 			}
 }		
