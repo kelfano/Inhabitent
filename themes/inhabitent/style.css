@@ -1175,31 +1175,43 @@ object {
       position: relative;
       padding-left: 0;
       margin-left: 0;
-      max-height: 350px; }
+      max-height: 450px; }
       .page-template .inhabitent-journal .wrapper ul.home-post li {
         overflow: hidden; }
         .page-template .inhabitent-journal .wrapper ul.home-post li img {
           width: 100%; }
         .page-template .inhabitent-journal .wrapper ul.home-post li .post-info-wrapper {
-          height: 120px; }
+          height: 140px; }
           .page-template .inhabitent-journal .wrapper ul.home-post li .post-info-wrapper .entry-meta h2 {
             margin-bottom: 0;
             font-size: .75rem;
-            padding-left: .75rem; }
+            padding-left: .75rem;
+            color: #404040;
+            font-family: merriweather,serif; }
           .page-template .inhabitent-journal .wrapper ul.home-post li .post-info-wrapper .entry-title h2 {
             color: #248a83;
             font-size: 1.3rem;
             margin-top: 0;
-            padding-left: .75rem; }
-          .page-template .inhabitent-journal .wrapper ul.home-post li .post-info-wrapper .black-btn a {
+            padding-left: .75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-family: novecentosans,sans-serif; }
+          .page-template .inhabitent-journal .wrapper ul.home-post li .post-info-wrapper .entry-title h2:hover {
+            color: #2f1339; }
+          .page-template .inhabitent-journal .wrapper ul.home-post li .post-info-wrapper a.black-btn {
             border: 1px solid #000;
             color: #000;
-            background-color: transparent;
             text-decoration: none;
             text-transform: uppercase;
             padding: .75rem 1.5rem;
-            font-size: .7rem;
-            margin-left: .9rem; }
+            font-size: .9rem;
+            position: relative;
+            left: .75rem; }
+          .page-template .inhabitent-journal .wrapper ul.home-post li .post-info-wrapper a.black-btn:hover {
+            background-color: #248a83;
+            color: #fff; }
+    .page-template .inhabitent-journal .wrapper ul.home-post:nth-child(2) .thumbnail-wrapper img {
+      max-height: 237px; }
 
 .adventures-container {
   margin-left: auto;
@@ -1246,7 +1258,12 @@ object {
     color: #fff;
     border: 1px solid #fff;
     padding: .75rem 1.5rem;
-    margin: 2rem; }
+    margin: 2rem;
+    text-decoration: none; }
+  .story-wrapper-left .story-info .white-btn:hover {
+    background-color: #248a83;
+    color: #fff;
+    border: none; }
 
 .story-grid-wrapper {
   display: -ms-flexbox;
@@ -1276,7 +1293,12 @@ object {
         color: #fff;
         border: 1px solid #fff;
         padding: .75rem 1.5rem;
-        margin: 2rem; }
+        margin: 2rem;
+        text-decoration: none; }
+      .story-grid-wrapper .story-wrapper-top .story-info .white-btn:hover {
+        background-color: #248a83;
+        color: #fff;
+        border: none; }
 
 .story-grid-wrapper-inner {
   height: 50%;
@@ -1302,7 +1324,12 @@ object {
         color: #fff;
         border: 1px solid #fff;
         padding: .75rem 1.5rem;
-        margin: 2rem; }
+        margin: 2rem;
+        text-decoration: none; }
+      .story-grid-wrapper-inner .story-wrapper-bottom-left .story-info .white-btn:hover {
+        background-color: #248a83;
+        color: #fff;
+        border: none; }
   .story-grid-wrapper-inner .story-wrapper-bottom-right {
     width: 50%;
     position: relative;
@@ -1322,7 +1349,12 @@ object {
         color: #fff;
         border: 1px solid #fff;
         padding: .75rem 1.5rem;
-        margin: 2rem; }
+        margin: 2rem;
+        text-decoration: none; }
+      .story-grid-wrapper-inner .story-wrapper-bottom-right .story-info .white-btn:hover {
+        background-color: #248a83;
+        color: #fff;
+        border: none; }
 
 /*--------------------------------------------------------------
 # About Page
