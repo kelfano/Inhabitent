@@ -1540,6 +1540,18 @@ div.post {
         color: #248a83;
         text-decoration: none;
         font-family: merriweather,serif; }
+    .search-no-results .site-content .content-area .widget_categories h2.widget-title {
+      color: #2f1339;
+      text-transform: uppercase;
+      font-family: Novecento Sans Web,sans-serif; }
+    .search-no-results .site-content .content-area .widget_categories ul {
+      list-style-type: none;
+      margin-left: 0;
+      padding-left: 0; }
+      .search-no-results .site-content .content-area .widget_categories ul a {
+        color: #248a83;
+        text-decoration: none;
+        font-family: merriweather,serif; }
     .search-no-results .site-content .content-area .widget_archive h2.widgettitle {
       color: #2f1339;
       text-transform: uppercase;

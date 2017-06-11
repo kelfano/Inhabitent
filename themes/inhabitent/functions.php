@@ -87,7 +87,12 @@ function inhabitent_scripts() {
 
 	$about_hero_url = CFS()->get( 'Hero_image' );
     $about_hero_style = ".custom-hero {
-        background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url($about_hero_url) no-repeat center bottom;
+        background: linear-gradient(
+					to bottom, 
+					rgba(0,0,0,0.4) 0%, 
+					rgba(0,0,0,0.4) 100% 
+					), 
+					url($about_hero_url) no-repeat center bottom;
         background-size: cover, cover;
     }";
 
@@ -96,6 +101,7 @@ function inhabitent_scripts() {
 	wp_enqueue_script('search-toggle',get_template_directory_uri().'/js/search-toggle.js', array('jquery'),false,true);
 
 	wp_enqueue_script('font-awesome-cdn','https://use.fontawesome.com/edb34e2fb9.js',array(),'4.7.0',false);
+	
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
 

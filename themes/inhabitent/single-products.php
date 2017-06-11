@@ -34,8 +34,7 @@ get_header(); ?>
 						<button type ="button" class="black-btn">
 							<i class ="fa fa-pinterest"> Pin </i>
 						</button>
-
-				</div>
+					</div>
 
 		<?php endwhile; // End of the loop. ?>
 

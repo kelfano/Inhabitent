@@ -11,6 +11,7 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class ="footer-blocks-container">
+
 					<div class ="footer-blocks-item">
 						<div class= "contact">
 							<h3>Contact info</h3>
@@ -35,6 +36,8 @@
 							</p>              
 						</div>
 					</div>
+
+
 					<div class ="footer-blocks-item">
 						<div class= "business-hours">
 							<h3>Business Hours</h3>
@@ -58,6 +61,8 @@
 							</p>
 						</div>
 					</div>
+
+					
 					<div class ="footer-blocks-item">
 						<div class= "text-logo">
 							<a href="<?php echo site_url();?>"><img src="<?php echo get_template_directory_uri()?>/project-04/images/logos/inhabitent-logo-text.svg" alt ="Inhabitent-logo-text"></a>

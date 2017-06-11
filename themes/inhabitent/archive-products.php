@@ -26,18 +26,16 @@ get_header(); ?>
 							'taxonomy' =>'product-type',
 							'hide_empty' =>0
 					));
+					
 							if(!empty($product_types) && !is_wp_error($product_types)) : ?>
 						
-
 								<?php foreach($product_types as $product_type):?>
 								
-
 									<a href="<?php echo get_term_link($product_type);?>"
 								<h3><?php echo $product_type ->name;?></h3>
 								</a>
 
 					<?php endforeach; ?>
-
 					<?php endif; ?>
 				
 				</ul>

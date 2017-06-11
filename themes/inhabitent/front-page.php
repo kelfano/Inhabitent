@@ -23,7 +23,6 @@ get_header();
 
       if(!empty($product_types) && !is_wp_error($product_types)) : ?>
 
-      
         <?php foreach($product_types as $product_type):?>
 
           <div class = "product-type-block-wrapper">
@@ -53,7 +52,7 @@ get_header();
 
           </div>
         <?php endforeach; ?>
-    <?php endif; ?>
+      <?php endif; ?>
     </div>
   </section>
 
@@ -71,6 +70,7 @@ get_header();
 
       <?php if ( $the_query->have_posts() ) : ?>
       <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
       
         <ul class ="home-post">
           <li>
@@ -105,52 +105,69 @@ get_header();
     <h2>Latest Adventures</h2>
       <ul class = "clearfix">
 
+      <?php
+      $adventure_args = array(
+        'post_type' => 'adventure_type',
+        'order' => 'asc',
+        'posts_per_page' => 1
+      );  ?>
+      <?php $the_query = new WP_Query( $adventure_args ); ?>
+
+      <?php if ( $the_query->have_posts() ) : ?>
+      <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+
         <li class = "story-wrapper-left">
 
-            <!--<img src="<?php echo get_template_directory_uri()?>/project-04/images/adventure-photos/canoe-girl.jpg" class="adventure-logo" alt="Canoe-Girl">-->
             <div class = "story-info">
               <h3 class = "entry-title">
                 <a href = "#"> Getting Back to Nature in a Canoe </a> 
               </h3>
-              <a class = "white-btn" href = "#"> Read More </a>
+              <a class = "white-btn" href = "<?php echo get_permalink();?>"> Read More </a>
             </div>
         </li>
 
         <li class = "story-grid-wrapper"> 
           <div class = "story-wrapper-top">
-            <!--<img src="<?php echo get_template_directory_uri()?>/project-04/images/adventure-photos/beach-bonfire.jpg" class="adventure-logo" alt="Beach-Bonfire">-->
+
             <div class = "story-info">
               <h3 class = "entry-title">
                 <a href = "#"> A Night with Friends at the Beach </a> 
               </h3>
-              <a class = "white-btn" href = "#"> Read More </a>
+              <a class = "white-btn" href = "<?php echo get_permalink();?>"> Read More </a>
             </div>
           </div>
 
          <div class = "story-grid-wrapper-inner">
             <div class = "story-wrapper-bottom-left">
-              <!--<img src="<?php echo get_template_directory_uri()?>/project-04/images/adventure-photos/mountain-hikers.jpg" class="adventure-logo" alt="Mountain-Hikers">-->
-            <div class = "story-info">
+
               <h3 class = "entry-title">
                 <a href = "#"> Taking in the View at Big Mountain </a>
               </h3>
-              <a class = "white-btn" href = "#"> Read More </a>
+              <a class = "white-btn" href = "<?php echo get_permalink();?>"> Read More </a>
             </div>
           </div>
 
 
             <div class = "story-wrapper-bottom-right">
-              <!--<img src="<?php echo get_template_directory_uri()?>/project-04/images/adventure-photos/night-sky.jpg" class="adventure-logo" alt="Night-Sky">-->
+
               <div class = "story-info">
                 <h3 class = "entry-title">
                   <a href = "#"> Star-Gazing at the Night Sky</a> 
                 </h3>
-                <a class = "white-btn" href = "#"> Read More </a>
+                <a class = "white-btn" href = "<?php echo get_permalink();?>"> Read More </a>
               </div>
             </div>
         </div>
         
-        </li>
+       </li>
+
+     <?php
+        endwhile;
+        endif;
+        // Reset Post Data
+        wp_reset_postdata();
+      ?>
       </ul>
 
 <?php

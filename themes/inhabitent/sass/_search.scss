@@ -37,7 +37,6 @@
       li:nth-child(2){
         padding-left: 1.5rem;
 
-        
         a{
           color: #248a83;
         }
@@ -175,7 +174,6 @@
       li:nth-child(2){
         padding-left: 1.5rem;
 
-        
         a{
           color: #248a83;
         }
@@ -253,7 +251,28 @@
             }
           }
         }    
-       }
+      }
+
+        .widget_categories{
+
+          h2.widget-title{
+              color: #2f1339;
+              text-transform: uppercase;
+              font-family: Novecento Sans Web,sans-serif;
+          }
+
+          ul{
+            list-style-type: none;
+            margin-left: 0;
+            padding-left: 0;
+
+            a{
+              color: #248a83;
+              text-decoration: none;
+              font-family: merriweather,serif;
+            }
+          }
+        }
 
         .widget_archive{
           
